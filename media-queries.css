@@ -1,0 +1,49 @@
+@media screen and (max-width: 750px) {
+    #content{
+        width: 60rem;
+    }
+    #other-options button{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #content{
+        width: 50rem;
+    }
+    #other-options button{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #content{
+        width: 40rem;
+    }
+    #other-options button{
+        width: 12.8rem;
+        height: 5.6rem;
+        gap: .25rem;
+    }
+    .other-options-brands {
+        font-size: 1.4rem;
+    }
+    .other-options-icons {
+        font-size: 1.6rem;
+        color: #FFFFFF;
+    }
+    .fa-apple {
+        font-size: 1.8rem;
+    }
+    .other-options-icons-div {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: rgba(17, 17, 17, .9);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: .75;
+    }
+}

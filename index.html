@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+    <link rel="stylesheet" href="./fontawesome/fontawesome.v6.5.1.all.min.css">
+</head>
+<body>
+    <img id="logo" src="./assets/Meu_Avatar-Preto_e_roxo2-BordaPreta.png" alt="">
+
+    <div id="content">
+        <div id="header">
+            <h1 id="titulo">Registre-se</h1>
+            <div id="subtitulo">
+                <p id="subtitulo-texto">Já possui uma conta?
+                    <a id="subtitulo-login" href="">Entrar</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <form id="forms">
+                <div id="name-div">
+                    <label class="labels" for="name">Como devemos chamá-lo?</label>
+                    <input class="inputs" type="text" id="name" placeholder="Insira o nome do seu perfil">
+                    <span class="error-message" id="name-error-preencha">Preencha este campo</span>
+                </div>
+                <div id="email-div">
+                    <label class="labels" for="email">Qual o seu e-mail?</label>
+                    <input class="inputs" type="text" id="email" placeholder="Insira o seu endereço de e-mail" maxlength="100">
+                    <span class="error-message" id="email-error-preencha">Preencha este campo</span>
+                    <span class="error-message" id="email-error-@"></span>
+                </div>
+                <div id="password-div">
+                    <div id="password-label-toggle">
+                        <label class="labels" for="password">Crie uma senha</label>
+                        <div id="password-toggle-button" onclick="togglePasswordVisibiliy()">
+                            <span id="password-toggle-icon-show" class="fa-solid fa-eye password-toggle-icon"></span>
+                            <span id="password-toggle-icon-hide" class="fa-solid fa-eye-slash password-toggle-icon"></span>
+                            <span id="password-toggle-text">Mostrar</span>
+                        </div>
+                    </div>
+                    <input class="inputs" type="password" id="password" placeholder="Insira sua senha" maxlength="50">
+                    <span id="password-requirements">Insira 6 ou mais caracteres</span>
+                    <span class="error-message" id="password-error-preencha">Preencha este campo</span>
+                    <span class="error-message" id="password-error-minimo">Insira 6 ou mais caracteres</span>
+                </div>
+                <div id="terms">
+                    Criando uma conta, você concorda com os <a class="terms-links" href="">Termos de uso</a> e <a class="terms-links" href="">Política de Privacidade</a>.
+                </div>
+                <div>
+                    <button type="button" id="submit-button" onclick="validarFormulario()">
+                        Criar conta
+                    </button>
+                </div>
+            </form>
+
+            <div id="other-div">
+                <span id="other-text">Ou entre com</span>
+                <div id="other-options">
+                    <button>
+                        <div class="other-options-icons-div">
+                            <span class="fa-brands fa-facebook-f other-options-icons"></span>
+                        </div>
+                        <span class="other-options-brands">Facebook</span>
+                    </button>
+                    <button>
+                        <div class="other-options-icons-div">
+                            <span class="fa-brands fa-google other-options-icons"></span>
+                        </div>
+                        <span class="other-options-brands">Google</span>
+                    </button>
+                    <button>
+                        <div class="other-options-icons-div">
+                            <span class="fa-brands fa-apple other-options-icons"></span>
+                        </div>
+                        <span class="other-options-brands">Apple</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="./fontawesome/fontawesome.v6.5.1.all.min.js" defer></script>
+</body>
+</html>
