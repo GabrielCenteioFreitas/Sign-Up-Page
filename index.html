@@ -24,18 +24,18 @@
 
         <div id="main-content">
             <form id="forms">
-                <div id="name-div">
+                <div class= "inputs-divs" id="name-div">
                     <label class="labels" for="name">Como devemos chamá-lo?</label>
                     <input class="inputs" type="text" id="name" placeholder="Insira o nome do seu perfil">
                     <span class="error-message" id="name-error-preencha">Preencha este campo</span>
                 </div>
-                <div id="email-div">
+                <div class= "inputs-divs" id="email-div">
                     <label class="labels" for="email">Qual o seu e-mail?</label>
                     <input class="inputs" type="text" id="email" placeholder="Insira o seu endereço de e-mail" maxlength="100">
                     <span class="error-message" id="email-error-preencha">Preencha este campo</span>
                     <span class="error-message" id="email-error-@"></span>
                 </div>
-                <div id="password-div">
+                <div class= "inputs-divs" id="password-div">
                     <div id="password-label-toggle">
                         <label class="labels" for="password">Crie uma senha</label>
                         <div id="password-toggle-button" onclick="togglePasswordVisibiliy()">
@@ -47,7 +47,6 @@
                     <input class="inputs" type="password" id="password" placeholder="Insira sua senha" maxlength="50">
                     <span id="password-requirements">Insira 6 ou mais caracteres</span>
                     <span class="error-message" id="password-error-preencha">Preencha este campo</span>
-                    <span class="error-message" id="password-error-minimo">Insira 6 ou mais caracteres</span>
                 </div>
                 <div id="terms">
                     Criando uma conta, você concorda com os <a class="terms-links" href="">Termos de uso</a> e <a class="terms-links" href="">Política de Privacidade</a>.

@@ -13,8 +13,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
     
-    /* display: grid;
-    justify-content: center; */
+    display: grid;
+    justify-content: center;
     width: 100vw;
 }
 
@@ -32,12 +32,11 @@ body {
 #content {
     width: 71.5rem;
 
-    margin: 2.4rem auto 0;
+    margin: 2.4rem;
 }
 
 #header {
     margin-bottom: 7.2rem;
-    /* width: 100%; */
 
     display: grid;
     justify-content: center;
@@ -80,18 +79,21 @@ body {
     border-radius: 1.2rem;
     border: 1px solid rgba(102, 102, 102, 0.35);
     color: #111111;
+
+    margin-top: .4rem;
 }
 #forms input:focus {
     outline: none;
     background-color:rgba(238, 236, 236, 0.878);
     border: 1px solid #111111;
 }
-#name-div, #email-div, #password-div {
+.inputs-divs {
     width: 100%;
     display: grid;
-    row-gap: 0.4rem;
 
     margin-bottom: 4rem;
+
+    /* border: 1px solid blue; */
 }
 #password-requirements {
     font-size: 1.4rem;
@@ -218,4 +220,6 @@ body {
     font-weight: 500;
     color: red;
     display: none;
+
+    /* border: 1px solid red; */
 }
