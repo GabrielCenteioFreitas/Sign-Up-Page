@@ -6,7 +6,7 @@
 <br>
 
 <p align="center">
-  <img alt="Imagem do projeto." src=".github/sign-up-page.png" width="80%">
+  <img alt="Imagem do projeto." src=".github/sign-up-page.png">
 </p>
 
 ## 🚀 Tecnologias
